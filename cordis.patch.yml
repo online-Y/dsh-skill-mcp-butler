@@ -1,0 +1,14 @@
+# dsh-skill-mcp-studio bundle patch: mounts the studio entry so the
+# client-modules scan can pick up this package's `dsh.client` bundle.
+#
+# manageCatalog: false → Phase 1 (coexist): the host half stays inert and the
+# browser half delegates to dsh-skills-mcp-group-manager's RPC, so there is one
+# state file and one skill-catalog filter.
+# manageCatalog: true  → Phase 2 (self-hosted): this package owns state,
+# filtering, MCP toggles and `/plugins/dsh-skill-mcp-studio/rpc`; disable the
+# old plugin in the same patch before flipping it.
+- insert:
+    - id: skill-mcp-studio
+      name: 'dsh-skill-mcp-studio'
+      config:
+        manageCatalog: false
