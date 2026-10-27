@@ -9,6 +9,6 @@
 # old plugin in the same patch before flipping it.
 - insert:
     - id: skill-mcp-studio
-      name: 'dsh-skill-mcp-studio'
+      name: 'dsh-skill-mcp-butler'
       config:
         manageCatalog: false

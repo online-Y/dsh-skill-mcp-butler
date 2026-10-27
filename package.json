@@ -1,5 +1,5 @@
 {
-  "name": "dsh-skill-mcp-studio",
+  "name": "dsh-skill-mcp-butler",
   "version": "0.1.0",
   "description": "dsh-skill&mcp-butler — Skills & MCP Studio for DeepSeek Harness: full-screen manager with per-skill switches, search, batch actions, drag-to-group, and MCP toggles.",
   "type": "module",
